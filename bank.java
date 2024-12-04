@@ -23,14 +23,14 @@ public class bank {
         System.out.print("Amount to be deposited:");
         amount = ob.nextInt();
         bal += amount;
-        System.out.print("Current balance: " + bal);
+        System.out.println("Current balance: " + bal);
        
     }
 
     void withdraw() {
         int amount;
         System.out.println("\t"+"WITHDRAW PROCESS"+"\t");
-        System.out.print("Amount to be withdrawn:");
+        System.out.println("Amount to be withdrawn:");
         amount = ob.nextInt();
         if(bal>0)
         {
@@ -45,10 +45,10 @@ public class bank {
 
     void display() {
         System.out.println("\t"+"DETAILS"+"\t");
-        System.out.print("Account number: " + acc_no);
-        System.out.print("Name: " + name);
-        System.out.print("Account type: " + acc_type);
-        System.out.print("Current balance: " + bal);
+        System.out.println("Account number: " + acc_no);
+        System.out.println("Name: " + name);
+        System.out.println("Account type: " + acc_type);
+        System.out.println("Current balance: " + bal);
     }
 
     public static void main(String args[]) {
