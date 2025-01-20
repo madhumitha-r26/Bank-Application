@@ -10,18 +10,22 @@ class Bank:
         self.current_amount=0
         
     def getvalues(self):
-        print("------- ENTER YOUR DETAILS ----------")
+        print("")
+        print("-------------------------------------")
+        print("Enter your details:")
         self.name=input("Enter Name:")
         self.acc_num=int(input("Enter Account Number:"))
         self.acc_type=input("Enter Account Type:")
 
 
     def deposit(self):
+        print("-------------------------------------")
         self.deposit_amount=int(input("Enter Deposit Amount:"))
         self.current_amount+=self.deposit_amount
         
 
     def withdraw(self):
+        print("-------------------------------------")
         self.withdraw_amount=int(input("Enter Withdraw Amount:"))
         if(self.withdraw_amount<self.current_amount):
             self.current_amount-=self.withdraw_amount
@@ -29,12 +33,15 @@ class Bank:
             print("Your balance is low!")
         
     def show_balance(self):
+        print("")
+        print("-------------------------------------")
         self.current_amount=self.current_amount
         print("Current Balance:",self.current_amount) 
         
         
     def display(self):
-        print("------------DETAILS--------------")
+        print("")
+        print("------------- DETAILS ---------------")
         print("Name:",self.name)   
         print("Account-Number:",self.acc_num)   
         print("Account-Type:",self.acc_type)   
@@ -44,7 +51,8 @@ class Bank:
 b=Bank()
 
 while(True):
-    print("-------BANK APPLICATION----------")
+    print("")
+    print("------- BANK APPLICATION ----------")
     print("1. Getting Details")
     print("2. Deposit Amount")
     print("3. Withdraw Amount")
